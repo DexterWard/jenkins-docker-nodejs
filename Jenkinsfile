@@ -1,7 +1,7 @@
 pipeline {
     agent{
         docker{
-            image 'node:14-alpine' //Image Docker Node.js
+            image 'node:25-alpine' //Image Docker Node.js
             args '-p 5001:5001'
         }
     }
