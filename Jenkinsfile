@@ -9,7 +9,7 @@ pipeline {
     stages {        
         stage('Install Dependencies') {
             steps {
-                sudo chown -R 122:126 "/.npm"
+                sh sudo chown -R 122:126 "/.npm"
                 sh 'npm install'
             }
         }
